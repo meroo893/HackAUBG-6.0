@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import React from 'react';
+import React from "react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -10,12 +10,12 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   NavigationMenuViewport,
-} from '@/components/ui/navigation-menu';
+} from "@/components/ui/navigation-menu";
 
 export default function Navbar() {
   return (
     <div className="flex justify-center items- bg-primary">
-      <div className="flex bg-blue-200 justify-between items-start w-4/5">
+      <div className="flex bg-blue-200 justify-between w-4/5 items-center">
         <div>ikonka</div>
         <div className="flex flex-row">
           <NavigationMenu>
