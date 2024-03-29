@@ -14,7 +14,7 @@ import {
 
 export default function Navbar() {
   return (
-    <div className="flex justify-center bg-primary">
+    <div className="flex justify-center bg-primary mb-2">
       <div className="flex bg-blue-200 justify-between w-4/5 items-center">
         <div>ikonka</div>
         <div className="flex">
