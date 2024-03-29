@@ -21,10 +21,20 @@ export default function Navbar() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <NavigationMenuLink>Link</NavigationMenuLink>
-                </NavigationMenuContent>
+                <div className="flex flex-row gap-8">
+                  <NavigationMenuTrigger>Menu</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <NavigationMenuLink>Link</NavigationMenuLink>
+                  </NavigationMenuContent>
+                  <NavigationMenuTrigger>Item two</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <NavigationMenuLink>Link</NavigationMenuLink>
+                  </NavigationMenuContent>
+                  <NavigationMenuTrigger>Item three</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <NavigationMenuLink>Link</NavigationMenuLink>
+                  </NavigationMenuContent>
+                </div>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
