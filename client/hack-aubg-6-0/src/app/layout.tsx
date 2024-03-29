@@ -20,7 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body className="flex flex-col min-h-screen">
         <Navbar />
-        {children}
+        <div className="flex flex-auto justify-center">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
