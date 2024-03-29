@@ -14,27 +14,31 @@ import {
 
 export default function Navbar() {
   return (
-    <div className="flex justify-center items- bg-primary">
+    <div className="flex justify-center bg-primary">
       <div className="flex bg-blue-200 justify-between w-4/5 items-center">
         <div>ikonka</div>
-        <div className="flex flex-row">
+        <div className="flex">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <div className="flex flex-row gap-8">
-                  <NavigationMenuTrigger>Menu</NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <NavigationMenuLink>Link</NavigationMenuLink>
-                  </NavigationMenuContent>
-                  <NavigationMenuTrigger>Item two</NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <NavigationMenuLink>Link</NavigationMenuLink>
-                  </NavigationMenuContent>
-                  <NavigationMenuTrigger>Item three</NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <NavigationMenuLink>Link</NavigationMenuLink>
-                  </NavigationMenuContent>
-                </div>
+                <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <NavigationMenuLink>Link</NavigationMenuLink>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuTrigger>Item two</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <NavigationMenuLink>Link</NavigationMenuLink>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuTrigger>Item three</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <NavigationMenuLink>Link</NavigationMenuLink>
+                </NavigationMenuContent>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
