@@ -1,7 +1,3 @@
-import { AspectRatio } from "../../ui/aspect-ratio";
-
-import carAssurance from "../../../assets/carAssurancePhoto1.avif";
-
 export default function InfoCards() {
   return (
     <>

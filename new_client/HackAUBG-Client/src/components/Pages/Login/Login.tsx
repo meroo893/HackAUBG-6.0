@@ -6,7 +6,6 @@ const Login: React.FC = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [loginStatus, setLoginStatus] = useState<string | null>(null);
-  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
 
   const handleLogin = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -15,19 +14,11 @@ const Login: React.FC = () => {
     );
     if (user) {
       setLoginStatus('Login Successful');
-      setIsLoggedIn(true);
       localStorage.setItem('loginStatus', JSON.stringify({ isLoggedIn: true }));
     } else {
       setLoginStatus('Invalid username or password');
     }
   };
-
-  useEffect(() => {
-    const status = localStorage.getItem('loginStatus');
-    if (status) {
-      setIsLoggedIn(JSON.parse(status).isLoggedIn);
-    }
-  }, []);
 
   if (loginStatus === 'Login Successful') {
     return <Navigate to="/" />;
