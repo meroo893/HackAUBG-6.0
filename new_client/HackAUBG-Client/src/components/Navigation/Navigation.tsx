@@ -12,7 +12,7 @@ export default function Navigation() {
           <Navbar />
         </section>
         <section className="flex items-center justify-center">
-          <div>Login</div>
+          <Link to="Login">Login</Link>
         </section>
       </div>
     </>

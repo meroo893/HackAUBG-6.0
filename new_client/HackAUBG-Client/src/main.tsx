@@ -8,6 +8,7 @@ import NotFound from "./components/Pages/Error/NotFound.tsx";
 import Index from "./components/Pages/Index/Index.tsx";
 import Users from "./components/Pages/User/Users.tsx";
 import AddInformation from "./components/AddInformation.tsx";
+import Login from "./components/Pages/Login/Login.tsx";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "addInfo",
         element: <AddInformation />,
+      },
+      {
+        path: "Login",
+        element: <Login />,
       },
     ],
   },
