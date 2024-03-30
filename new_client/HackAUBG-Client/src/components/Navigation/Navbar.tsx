@@ -5,8 +5,8 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from "../ui/navigation-menu";
-import { Link } from "react-router-dom";
+} from '../ui/navigation-menu';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
@@ -34,10 +34,10 @@ export default function Navbar() {
           <NavigationMenuContent>
             <NavigationMenuLink>
               <ul className="w-[300px] grid grid-cols-4 gap-4 list-none">
-                <Link to="asd">Nav Link</Link>
-                <Link to="asd">Nav Link</Link>
-                <Link to="asd">Nav Link</Link>
-                <Link to="asd">Nav Link</Link>
+                <Link to="addInfo">Nav Link</Link>
+                <Link to="addInfo">Nav Link</Link>
+                <Link to="addInfo">Nav Link</Link>
+                <Link to="addInfo">Nav Link</Link>
               </ul>
             </NavigationMenuLink>
           </NavigationMenuContent>
