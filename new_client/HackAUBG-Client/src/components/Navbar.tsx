@@ -14,11 +14,14 @@ export default function Navbar() {
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="!bg-primary hover:!text-foreground hover:!bg-secondary focus:!text-foreground">
-            Item One
+            Users
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="w-full grid grid-cols-4 gap-4 list-none">
-              <Link to="/users">Nav Link</Link>
+            <ul className="w-[300px] grid grid-cols-4 gap-4 list-none">
+              <Link to="/users">See All Users</Link>
+              <Link to="/users">See All Users</Link>
+              <Link to="/users">See All Users</Link>
+              <Link to="/users">See All Users</Link>
             </ul>
 
             <NavigationMenuLink></NavigationMenuLink>
