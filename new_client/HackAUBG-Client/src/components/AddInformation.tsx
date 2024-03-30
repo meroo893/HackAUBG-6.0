@@ -3,7 +3,7 @@ export default function AddInformation() {
     <div className="flex justify-center position-fixed top-0">
       <div className="w-[400px] bg-white shadow-md p-4 rounded-md">
         <h1 className="text-lg mb-3 font-bold">Add Your Information</h1>
-        <form>
+        <form action="">
           <input
             required
             name="name"
