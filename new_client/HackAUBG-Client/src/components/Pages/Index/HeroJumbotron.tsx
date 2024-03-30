@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { Button } from "./ui/button";
-import { SparklesCore } from "./ui/sparkles";
+import { Button } from "../../ui/button";
+import { SparklesCore } from "../../ui/sparkles";
 
 export default function HeroJumbotron() {
   return (

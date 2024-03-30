@@ -1,5 +1,5 @@
-import style from "../../assets/style";
-import Hero from "../Hero";
+import style from "../../../assets/style";
+import Hero from "./Hero";
 
 export default function Index() {
   return (

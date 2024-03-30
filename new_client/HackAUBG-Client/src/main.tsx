@@ -4,9 +4,9 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import Layout from "./components/Navigation/Layout.tsx";
-import NotFound from "./components/NotFound.tsx";
-import Index from "./components/Pages/Index.tsx";
-import Users from "./components/Pages/Users.tsx";
+import NotFound from "./components/Pages/Error/NotFound.tsx";
+import Index from "./components/Pages/Index/Index.tsx";
+import Users from "./components/Pages/User/Users.tsx";
 
 const router = createBrowserRouter([
   {
