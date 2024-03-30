@@ -8,8 +8,8 @@ export default function Index() {
   return (
     <div className={`${style.pageWidth} ${style.pageMargin} bg-background`}>
       <Hero></Hero>
-      <RecommendationCards></RecommendationCards>
       <InfoCards></InfoCards>
+      <RecommendationCards></RecommendationCards>
       <FAQ></FAQ>
     </div>
   );
