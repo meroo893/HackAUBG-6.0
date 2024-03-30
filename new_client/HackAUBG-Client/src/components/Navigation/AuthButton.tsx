@@ -10,7 +10,7 @@ const AuthButton: React.FC = () => {
     setIsLoggedIn(loginStatus.isLoggedIn);
   }, []);
 
-  const handleAuthAction = () => {
+  const handleAuthAction = (e: any) => {
     if (isLoggedIn) {
       setIsLoggedIn(false);
       localStorage.setItem(
@@ -19,6 +19,7 @@ const AuthButton: React.FC = () => {
       );
     } else {
       navigate('/login');
+      e.render();
     }
   };
 
