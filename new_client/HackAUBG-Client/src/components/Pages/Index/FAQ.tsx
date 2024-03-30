@@ -3,12 +3,12 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../../ui/accordion";
+} from '../../ui/accordion';
 
 export default function FAQ() {
   return (
     <>
-      <div className="flex flex-col justify-center items-center mt-12">
+      <div className="flex flex-col justify-center items-center">
         <div>FAQ</div>
         <Accordion type="single" collapsible className="w-1/2">
           <AccordionItem value="item-1">

@@ -19,12 +19,12 @@ const AuthButton: React.FC = () => {
       );
     } else {
       navigate('/login');
-      e.render();
+      e.target.render();
     }
   };
 
   return (
-    <button onClick={handleAuthAction}>
+    <button className="text-black" onClick={handleAuthAction}>
       {isLoggedIn ? 'Sign Out' : 'Login'}
     </button>
   );

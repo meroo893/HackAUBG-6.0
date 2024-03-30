@@ -15,7 +15,7 @@ export default function RecommendationCard(props: recommendationCardProps) {
           <img src={props.image} alt="asian" className="rounded-full" />
         </div>
         <div>
-          <img className="max-w-[8rem] margin-right" src={Image} alt="stars" />
+          <img className="max-w-[6rem] margin-right" src={Image} alt="stars" />
         </div>
       </div>
       <div className="flex flex-col flex-1 m-2 items-center">

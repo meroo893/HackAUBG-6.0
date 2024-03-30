@@ -13,7 +13,7 @@ export default function Navbar() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="!bg-primary hover:!text-foreground hover:!bg-secondary focus:!text-foreground">
+          <NavigationMenuTrigger className="!bg-primary hover:!text-foreground hover:!bg-secondary text-black focus:!text-foreground">
             Users
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -25,7 +25,7 @@ export default function Navbar() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="!bg-primary hover:!text-foreground hover:!bg-secondary focus:!text-foreground">
+          <NavigationMenuTrigger className="!bg-primary hover:!text-foreground hover:!bg-secondary text-black focus:!text-foreground">
             Add Data
           </NavigationMenuTrigger>
           <NavigationMenuContent>

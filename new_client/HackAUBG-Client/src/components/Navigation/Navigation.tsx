@@ -6,7 +6,7 @@ export default function Navigation() {
   return (
     <>
       <div className="flex justify-between text-background p-4">
-        <h1 className="flex justify-center items-center">
+        <h1 className="flex justify-center items-center text-black">
           <Link to="home">SafeCare</Link>
         </h1>
         <section className="flex gap-8">
