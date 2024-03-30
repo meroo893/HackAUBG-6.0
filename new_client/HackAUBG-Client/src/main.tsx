@@ -3,10 +3,10 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
-import Layout from "./components/Layout.tsx";
+import Layout from "./components/Navigation/Layout.tsx";
 import NotFound from "./components/NotFound.tsx";
-import Index from "./components/Index.tsx";
-import Users from "./components/Users.tsx";
+import Index from "./components/Pages/Index.tsx";
+import Users from "./components/Pages/Users.tsx";
 
 const router = createBrowserRouter([
   {
