@@ -14,14 +14,14 @@ const Login: React.FC = () => {
     );
     if (user) {
       setLoginStatus('Login Successful');
-      localStorage.setItem('loginStatus', JSON.stringify({ isLoggedIn: true }));
+      localStorage.setItem('loginStatus', "true");
     } else {
       setLoginStatus('Invalid username or password');
     }
   };
 
   if (loginStatus === 'Login Successful') {
-    return <Navigate to="/" />;
+    return <Navigate to="/home" />;
   }
 
   return (
