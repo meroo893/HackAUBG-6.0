@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-type UserProps = {
+interface UserProps {
   name: string;
-  email?: string;
-  age?: number;
+  email: string;
   id: number;
-};
+}
 
-function UserList() {
-  const [users, setUsers] = useState<UserProps>({} as UserProps);
+export default function UserList() {
+  const [users, setUsers] = useState<UserProps[]>([]);
 
   const newUser = {
     name: 'John Doe',
@@ -16,14 +15,19 @@ function UserList() {
     id: 1,
   };
 
-  setUsers(newUser);
+  useEffect(() => {
+    setUsers((prevUsers) => [...prevUsers, newUser]);
+  }, []);
+
   return (
     <div>
-      <h1>{users.name}</h1>
-      <h2>{users.age}</h2>
-      <h3>{users.email}</h3>
+      {users.map((user) => (
+        <div key={user.id}>
+          <h1>{user.name}</h1>
+          <h3>{user.email}</h3>
+          <h3>{user.id}</h3>
+        </div>
+      ))}
     </div>
   );
 }
-
-export default UserList;
