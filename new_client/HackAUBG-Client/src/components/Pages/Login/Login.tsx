@@ -1,5 +1,6 @@
 import React, { useState, FormEvent } from 'react';
 import { users } from '../../../lib/mockdatabase';
+import { Navigate } from 'react-router';
 
 const Login: React.FC = () => {
   const [username, setUsername] = useState('');
@@ -14,12 +15,15 @@ const Login: React.FC = () => {
     );
     if (user) {
       setLoginStatus('Login Successful');
-      // Proceed with login success flow
     } else {
       setLoginStatus('Invalid username or password');
       // Handle login failure
     }
   };
+
+  if (loginStatus === 'Login Successful') {
+    return <Navigate to="/home" />;
+  }
 
   return (
     <div className="flex justify-center items-center h-screen bg-gray-100">
