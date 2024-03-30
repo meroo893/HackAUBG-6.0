@@ -20,12 +20,12 @@ export default function UserList() {
   }, []);
 
   return (
-    <div>
+    <div className="flex flex-col gap-4">
       {users.map((user) => (
-        <div key={user.id}>
-          <h1>{user.name}</h1>
-          <h3>{user.email}</h3>
-          <h3>{user.id}</h3>
+        <div key={user.id} className="bg-white shadow-md p-4 rounded-md">
+          <h1 className="text-2xl font-bold">{user.name}</h1>
+          <h3 className="text-gray-600">{user.email}</h3>
+          <h3 className="text-gray-600">{user.id}</h3>
         </div>
       ))}
     </div>
