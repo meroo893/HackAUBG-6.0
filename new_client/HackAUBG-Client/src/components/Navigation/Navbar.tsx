@@ -29,11 +29,14 @@ export default function Navbar() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="!bg-primary hover:!text-foreground hover:!bg-secondary focus:!text-foreground">
-            Item Two
+            Add Data
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <NavigationMenuLink>
-              <ul className="w-full grid grid-cols-4 gap-4 list-none">
+              <ul className="w-[300px] grid grid-cols-4 gap-4 list-none">
+                <Link to="asd">Nav Link</Link>
+                <Link to="asd">Nav Link</Link>
+                <Link to="asd">Nav Link</Link>
                 <Link to="asd">Nav Link</Link>
               </ul>
             </NavigationMenuLink>
