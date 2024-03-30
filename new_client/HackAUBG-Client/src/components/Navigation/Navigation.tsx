@@ -7,7 +7,7 @@ export default function Navigation() {
     <>
       <div className="flex justify-between text-background p-4">
         <h1 className="flex justify-center items-center">
-          <Link to="home">Project Name</Link>
+          <Link to="home">SoftCare</Link>
         </h1>
         <section className="flex gap-8">
           <Navbar />

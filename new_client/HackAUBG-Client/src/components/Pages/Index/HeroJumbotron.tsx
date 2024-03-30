@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
-import { Button } from "../../ui/button";
-import { SparklesCore } from "../../ui/sparkles";
+import { SparklesCore } from '../../ui/sparkles';
 
 export default function HeroJumbotron() {
   return (
@@ -18,11 +16,8 @@ export default function HeroJumbotron() {
           />
         </div>
         <h1 className="md:text-7xl text-3xl lg:text-6xl font-bold text-center text-white relative z-20">
-          Build great products
+          SoftCare
         </h1>
-        <Button className="mt-6 bg-background text-popover-foreground">
-          <Link to="#">Get Started Now</Link>
-        </Button>
       </div>
     </>
   );

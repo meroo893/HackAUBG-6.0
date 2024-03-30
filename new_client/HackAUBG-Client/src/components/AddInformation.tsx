@@ -23,13 +23,6 @@ export default function AddInformation() {
             type="url"
             className="mb-3 w-full input input-bordered border-2 border-spacing-y-2 border-rounded border-gray-500"
           />
-          <input
-            required
-            name="yes"
-            placeholder="Price"
-            type="number"
-            className="mb-3 w-full input input-bordered border-2 border-spacing-y-2 border-rounded border-gray-500"
-          />
         </form>
       </div>
     </div>

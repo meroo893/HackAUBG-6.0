@@ -17,10 +17,7 @@ export default function Navbar() {
             Users
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="w-[300px] grid grid-cols-4 gap-4 list-none">
-              <Link to="/users">See All Users</Link>
-              <Link to="/users">See All Users</Link>
-              <Link to="/users">See All Users</Link>
+            <ul className="w-[100px] list-none">
               <Link to="/users">See All Users</Link>
             </ul>
 
@@ -33,11 +30,8 @@ export default function Navbar() {
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <NavigationMenuLink>
-              <ul className="w-[300px] grid grid-cols-4 gap-4 list-none">
-                <Link to="addInfo">Nav Link</Link>
-                <Link to="addInfo">Nav Link</Link>
-                <Link to="addInfo">Nav Link</Link>
-                <Link to="addInfo">Nav Link</Link>
+              <ul className="w-[160px] list-none">
+                <Link to="addInfo">Add Information</Link>
               </ul>
             </NavigationMenuLink>
           </NavigationMenuContent>
