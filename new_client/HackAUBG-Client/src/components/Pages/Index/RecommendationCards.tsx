@@ -33,7 +33,7 @@ const data: Array<review> = [
 
 export default function RecommendationCards() {
   return (
-    <div className="flex flex-wrap justify-between min-w-full max-h-full mt-6 p-12">
+    <div className="flex justify-between min-w-full max-h-full mt-6 p-12">
       {data.map((x) => (
         <RecommendationCard
           key={x.id}
