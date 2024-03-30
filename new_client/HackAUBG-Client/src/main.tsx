@@ -1,15 +1,16 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-import Layout from "./components/Layout.tsx";
-import NotFound from "./components/NotFound.tsx";
-import Index from "./components/Index.tsx";
+import Layout from './components/Layout.tsx';
+import NotFound from './components/NotFound.tsx';
+import Index from './components/Index.tsx';
+import Users from './components/Users.tsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Layout />,
     errorElement: <NotFound />,
     children: [
@@ -17,12 +18,15 @@ const router = createBrowserRouter([
         index: true,
         element: <Index />,
       },
+      {
+        path: '/users',
+        element: <Users />,
+      },
     ],
   },
-  {},
 ]);
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
+ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>

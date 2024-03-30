@@ -5,8 +5,8 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from "../components/ui/navigation-menu";
-import { Link } from "react-router-dom";
+} from '../components/ui/navigation-menu';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
@@ -15,9 +15,8 @@ export default function Navbar() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
           <NavigationMenuContent>
-
             <ul className="w-full grid grid-cols-4 gap-4 list-none">
-              <Link to="asd">Nav Link</Link>
+              <Link to="/users">Nav Link</Link>
             </ul>
 
             <NavigationMenuLink></NavigationMenuLink>
@@ -27,11 +26,9 @@ export default function Navbar() {
           <NavigationMenuTrigger>Item Two</NavigationMenuTrigger>
           <NavigationMenuContent>
             <NavigationMenuLink>
-              
               <ul className="w-full grid grid-cols-4 gap-4 list-none">
                 <Link to="asd">Nav Link</Link>
               </ul>
-              
             </NavigationMenuLink>
           </NavigationMenuContent>
         </NavigationMenuItem>
