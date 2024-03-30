@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import style from "../assets/style";
 import Navigation from "./Navigation";
+import Footer from "./Footer";
 
 export default function Layout() {
   return (
@@ -19,7 +20,9 @@ export default function Layout() {
         </div>
 
         <div className="bg-primary">
-          <footer className={style.pageWidth}>FOOTER</footer>
+          <footer className={`${style.pageWidth} ${style.pageMargin}`}>
+            <Footer></Footer>
+          </footer>
         </div>
       </div>
     </>

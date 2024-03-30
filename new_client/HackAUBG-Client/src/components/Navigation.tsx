@@ -4,11 +4,11 @@ export default function Navigation() {
   return (
     <>
       <div className="flex justify-between text-background p-4">
-        <h1>Project Name</h1>
+        <h1 className="flex justify-center items-center">Project Name</h1>
         <section className="flex gap-8">
           <Navbar />
         </section>
-        <section className="flex">
+        <section className="flex items-center justify-center">
           <div>Login</div>
         </section>
       </div>
