@@ -1,4 +1,4 @@
-import React, { useState, FormEvent } from 'react';
+import React, { useState, FormEvent, useEffect } from 'react';
 import { users } from '../../../lib/mockdatabase';
 import { Navigate } from 'react-router';
 
@@ -6,23 +6,31 @@ const Login: React.FC = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [loginStatus, setLoginStatus] = useState<string | null>(null);
+  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
 
   const handleLogin = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Check if the user exists in the mock database
     const user = users.find(
       (user) => user.username === username && user.password === password
     );
     if (user) {
       setLoginStatus('Login Successful');
+      setIsLoggedIn(true);
+      localStorage.setItem('loginStatus', JSON.stringify({ isLoggedIn: true }));
     } else {
       setLoginStatus('Invalid username or password');
-      // Handle login failure
     }
   };
 
+  useEffect(() => {
+    const status = localStorage.getItem('loginStatus');
+    if (status) {
+      setIsLoggedIn(JSON.parse(status).isLoggedIn);
+    }
+  }, []);
+
   if (loginStatus === 'Login Successful') {
-    return <Navigate to="/home" />;
+    return <Navigate to="/" />;
   }
 
   return (

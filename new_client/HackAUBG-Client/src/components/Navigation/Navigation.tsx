@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
+import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
+import AuthButton from './AuthButton';
 
 export default function Navigation() {
   return (
@@ -12,7 +13,7 @@ export default function Navigation() {
           <Navbar />
         </section>
         <section className="flex items-center justify-center">
-          <Link to="Login">Login</Link>
+          <AuthButton />
         </section>
       </div>
     </>
