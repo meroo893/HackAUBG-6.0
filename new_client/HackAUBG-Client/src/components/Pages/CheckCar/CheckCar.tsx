@@ -18,8 +18,9 @@ export default function CheckCar() {
     e.preventDefault();
     const axios = useAxios();
     try {
-      const result = await axios.get<carEntity>("/endpoint");
+      const result = await axios.get<carEntity>("/api");
       setCarData(result.data);
+      console.log(carData);
     } catch (error) {
       return redirect("/NotFound");
     }
