@@ -3,7 +3,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../../ui/accordion";
+} from '../../ui/accordion';
 
 export default function FAQ() {
   return (
@@ -14,36 +14,35 @@ export default function FAQ() {
         <Accordion type="single" collapsible className="w-1/2 my-6">
           <AccordionItem value="item-1">
             <AccordionTrigger>Why should you choose us?</AccordionTrigger>
-            <AccordionContent>
-              Yes. It adheres to the WAI-ARIA design pattern.
-            </AccordionContent>
+            <AccordionContent>We are Better. WE ARE BETTER!</AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
             <AccordionTrigger>What do we do?</AccordionTrigger>
-            <AccordionContent>
-              Yes. It comes with default styles that matches the other
-              components&apos; aesthetic.
-            </AccordionContent>
+            <AccordionContent>We work for you!</AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
-            <AccordionTrigger>Is it animated?</AccordionTrigger>
+            <AccordionTrigger>Is it free?</AccordionTrigger>
             <AccordionContent>
-              Yes. It&apos;s animated by default, but you can disable it if you
-              prefer.
+              Yes. Of course it's free! We are the middle man between you and
+              your dreams!
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
-            <AccordionTrigger>Is it animated?</AccordionTrigger>
+            <AccordionTrigger>
+              How to be sure you give me the best offer?
+            </AccordionTrigger>
             <AccordionContent>
-              Yes. It&apos;s animated by default, but you can disable it if you
-              prefer.
+              Our advanced AI model takes and analyzes all the data from the
+              insurancy companies and you need to gives you the best offer!
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-5">
-            <AccordionTrigger>Is it animated?</AccordionTrigger>
+            <AccordionTrigger>
+              Do i need to go to the office of the insurancy compnay?
+            </AccordionTrigger>
             <AccordionContent>
-              Yes. It&apos;s animated by default, but you can disable it if you
-              prefer.
+              No, you just tell us what you want from the comfort of your home
+              and we do everything else!
             </AccordionContent>
           </AccordionItem>
         </Accordion>

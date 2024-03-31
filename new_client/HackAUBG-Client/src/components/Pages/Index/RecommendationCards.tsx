@@ -1,7 +1,7 @@
 import RecommendationCard from './RecommendationCard';
 import Image1 from '../../../assets/asian man.png';
 import Image2 from '../../../assets/black man.png';
-import Image3 from '../../../assets/asian.png';
+import Image3 from '../../../assets/greek man.png';
 
 type review = {
   id: number;
@@ -14,23 +14,23 @@ type review = {
 const data: Array<review> = [
   {
     id: 1,
-    author: 'Emily Johnson',
+    author: 'Jamal Husein',
     occupation: 'Software Engineer',
     review:
-      "I absolutely loved the product! It's intuitive to use and has greatly improved my productivity at work. Highly recommended.",
+      "I absolutely loved It! It's intuitive to use and has greatly improved the quality of my insurance and saved me money. Highly recommended.",
     image: Image2,
   },
   {
     id: 2,
-    author: 'David Smith',
+    author: 'Kenpachi Zaraki',
     occupation: 'Teacher',
     review:
-      "As an educator, I find this product extremely helpful in organizing my lesson plans and keeping track of student progress. It's a game-changer!",
+      "As an educator, I find this product extremely helpful in organizing my finances and keeping track of my safety. It's a game-changer!",
     image: Image1,
   },
   {
     id: 3,
-    author: 'Jennifer Garcia',
+    author: 'Edward Newgate',
     occupation: 'Marketing Manager',
     review:
       "Being in the marketing field, I'm always on the lookout for tools that can streamline our campaigns. This product exceeded my expectations and has become an essential part of our workflow.",
