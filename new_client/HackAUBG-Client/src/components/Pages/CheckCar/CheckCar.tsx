@@ -1,8 +1,8 @@
-import { Button } from "../../ui/button";
+import { Button } from '../../ui/button';
 
-import useAxios from "../../../utils/useAxios";
-import { redirect } from "react-router-dom";
-import { useState } from "react";
+import useAxios from '../../../utils/useAxios';
+import { redirect } from 'react-router-dom';
+import { useState } from 'react';
 
 type carEntity = {
   carPlate: string;
@@ -16,11 +16,11 @@ export default function CheckCar() {
     e.preventDefault();
     const axios = useAxios();
     try {
-      const result = await axios.get<carEntity>("/api");
+      const result = await axios.get<carEntity>('/api');
       setCarData(result.data);
       console.log(carData);
     } catch (error) {
-      return redirect("/NotFound");
+      return redirect('/NotFound');
     }
   };
   return (
@@ -51,7 +51,10 @@ export default function CheckCar() {
                   </div>
                   <div className="relative"></div>
                   <div className="relative">
-                    <Button className="bg-accent text-white rounded-md px-2 py-1" onClick={sendRequest}>
+                    <Button
+                      className="bg-accent text-white rounded-md px-2 py-1"
+                      onClick={sendRequest}
+                    >
                       Submit
                     </Button>
                   </div>
@@ -65,21 +68,27 @@ export default function CheckCar() {
             <div className="flex flex-col min-w-[300px] rounded-lg shadow-lg">
               <div className="flex justify-around bg-gradient-to-r from-primary to-accent ">
                 <div className="font-bold underline text-primary-foreground">
-                  Data Name:
+                  Model
                 </div>
-                <div className="italic">Data</div>
+                <div className="italic">Sedan</div>
               </div>
               <div className="flex justify-around bg-gradient-to-r from-primary to-accent">
                 <div className="font-bold underline text-primary-foreground">
-                  Data Name:
+                  Brand
                 </div>
-                <div className="italic">Data</div>
+                <div className="italic">Toyota</div>
               </div>
               <div className="flex justify-around bg-gradient-to-r from-primary to-accent">
                 <div className="font-bold underline text-primary-foreground">
-                  Data Name:
+                  Fuel Type
                 </div>
-                <div className="italic">Data</div>
+                <div className="italic">Petrol</div>
+              </div>
+              <div className="flex justify-around bg-gradient-to-r from-primary to-accent">
+                <div className="font-bold underline text-primary-foreground">
+                  Risk Factor
+                </div>
+                <div className="italic font-bold">38.383 +-8.7174</div>
               </div>
             </div>
           </div>

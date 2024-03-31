@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 type Contributors = {
   id: number;
@@ -15,46 +15,51 @@ type Sponsors = {
 const Contributors: Array<Contributors> = [
   {
     id: 1,
-    name: "Bobri",
-    link: "https://github.com/MitevDobromir",
+    name: 'Bobri',
+    link: 'https://github.com/MitevDobromir',
   },
   {
     id: 2,
-    name: "George",
-    link: "https://github.com/beurslf",
+    name: 'George',
+    link: 'https://github.com/beurslf',
   },
   {
     id: 3,
-    name: "Boii",
-    link: "https://github.com/AlexanderTsoiGeorgiev",
+    name: 'Boii',
+    link: 'https://github.com/AlexanderTsoiGeorgiev',
   },
   {
     id: 4,
-    name: "Pyetko",
-    link: "https://github.com/Pepkin",
+    name: 'Pyetko',
+    link: 'https://github.com/Pepkin',
   },
   {
     id: 5,
-    name: "Mertoooo",
-    link: "https://github.com/meroo893",
+    name: 'Mertoooo',
+    link: 'https://github.com/meroo893',
   },
 ];
 
 const Sponsors: Array<Sponsors> = [
   {
     id: 1,
-    name: "TBI Bank",
-    link: "https://tbibank.bg/",
+    name: 'TBI Bank',
+    link: 'https://tbibank.bg/',
   },
   {
     id: 2,
-    name: "Soft Serve",
-    link: "https://www.softserveinc.com/en-us",
+    name: 'Soft Serve',
+    link: 'https://www.softserveinc.com/en-us',
   },
   {
     id: 3,
-    name: "Gameloft",
-    link: "https://www.gameloft.com/",
+    name: 'Gameloft',
+    link: 'https://www.gameloft.com/',
+  },
+  {
+    id: 4,
+    name: 'FIT TU-Sofia',
+    link: 'http://mtf.tu-sofia.bg/',
   },
 ];
 
