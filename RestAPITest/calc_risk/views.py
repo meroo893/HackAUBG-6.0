@@ -9,11 +9,10 @@ from django.views.decorators.http import require_http_methods
 def home(request):
     car = Car.objects.get(car_number="6817149875339387")
     car_data = {
-        "carNumber": car.number,
+        "carNumber": car.car_number,
         "model": car.model,
-        "make": car.make
+        "make": car.year_of_first_registry,
     }
-    #car_data = serializers.serialize("json", [car])
     return JsonResponse({'car': car_data})
 
 
@@ -36,21 +35,22 @@ def import_data_from_json(request):
         return JsonResponse({'error': str(e)}, status=400)
 
 
-def get_car_by_number(request):
-    # Corrected the parameter name to match the URL query parameter 'car_number'
-    car_number = request.GET.get('car_number')
+from django.http import JsonResponse
+from .models import Car
 
-    if car_number is None:
+def get_car_by_number(request):
+    car_number = request.GET.get('car_number')
+    if not car_number:
         return JsonResponse({'error': 'No car number provided'}, status=400)
 
     try:
         car = Car.objects.get(car_number=car_number)
-        # Serialize the Car object to JSON format
-        car_data = serializers.serialize("json", [car], ensure_ascii=False)
-        # Since 'serialize' returns a string, we convert it back to a list to extract the first element
-        car_data_list = json.loads(car_data)
-        car_data_first = car_data_list[0] if car_data_list else {}
-        # Return the car data. Note: JsonResponse's safe parameter is set to False to allow non-dict objects
-        return JsonResponse(car_data_first, safe=False)
+        car_data = {
+            "carNumber": car.car_number,
+            "model": car.brand,
+            "make": car.year_of_first_registry,
+        }
+        return JsonResponse({'car': car_data})
     except Car.DoesNotExist:
         return JsonResponse({'error': 'Car not found'}, status=404)
+
