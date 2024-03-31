@@ -32,7 +32,7 @@ Our mission is simple yet profound: to empower you in finding car insurance that
 
 ## Features
 
-- **Personalized Recommendations**: Get insurance suggestions tailored to your individual profile, including your credit score and driving record.
+- **Personalized Recommendations (To be implemented)**: Get insurance suggestions tailored to your individual profile, including your credit score and driving record.
 - **Comprehensive Database**: Access a wide array of insurance companies, from industry giants to niche providers, all in one place.
 - **User-Friendly Interface**: Our platform is designed with you in mind—intuitive, easy to navigate, and pleasant to use.
 - **Secure and Private**: Your privacy is our top priority. Rest assured, your personal information is kept secure and never shared without consent.
