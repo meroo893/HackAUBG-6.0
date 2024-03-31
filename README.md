@@ -1,10 +1,10 @@
 # SafeCare Project
 **Contributors**
-- Dobromir Mitrev
-- Georgi Penev
-- Alexander Georgiev
-- Petko Gospodinov
-- Mert Kamberov
+- Dobromir Mitrev - 4 hours of sleep
+- Georgi Penev - 10 hours of sleep
+- Alexander Georgiev - 2 and a half hours of sleep
+- Petko Gospodinov - 8 hours of sleep
+- Mert Kamberov - 6 hours of sleep
 ---
 **Tech Stack**
 **Front End**
@@ -20,6 +20,7 @@
 - Keras/TensorFlow
 - SQL Alchemy
 - PostgresSQL
+ 
 
 
 # SafeCare Insurance Finder
