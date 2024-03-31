@@ -1,3 +1,27 @@
+# SafeCare Project
+**Contributors**
+- Dobromir Mitrev
+- Georgi Penev
+- Alexander Georgiev
+- Petko Gospodinov
+- Mert Kamberov
+---
+**Tech Stack**
+**Front End**
+- React
+- TS
+
+
+**Back End**
+- Django
+- Python
+- Pandas & Numpy
+- Scikit-Learn
+- Keras/TensorFlow
+- SQL Alchemy
+- PostgresSQL
+
+
 # SafeCare Insurance Finder
 
 Welcome to the **SafeCare Insurance Finder**, the ultimate platform dedicated to simplifying your search for the perfect car insurance. In a world where choice can be overwhelming, we're here to guide you towards making informed decisions that align with your unique needs, background, and financial situation. 🚗💖
@@ -47,3 +71,7 @@ Embark on your journey to smarter, more personalized car insurance with SafeCare
 ---
 
 **Note**: The links and contact information provided in this README are placeholders. Replace them with actual links and contact details pertinent to your project.
+
+---
+
+
