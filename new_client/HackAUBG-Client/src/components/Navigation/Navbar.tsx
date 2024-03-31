@@ -5,8 +5,8 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from '../ui/navigation-menu';
-import { Link } from 'react-router-dom';
+} from "../ui/navigation-menu";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -17,8 +17,10 @@ export default function Navbar() {
             Users
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="w-[100px] list-none">
-              <Link to="/users">See All Users</Link>
+            <ul className="flex justify-around w-[320px] list-none items-center">
+              <Link to="/users" className="text-lg">
+                See All Users
+              </Link>
             </ul>
 
             <NavigationMenuLink></NavigationMenuLink>
@@ -30,8 +32,13 @@ export default function Navbar() {
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <NavigationMenuLink>
-              <ul className="w-[160px] list-none">
-                <Link to="addInfo">Add Information</Link>
+              <ul className="flex justify-around w-[320px] list-none items-center">
+                <Link to="addInfo" className="text-lg">
+                  Add Information
+                </Link>
+                <Link to="CheckCar" className="text-lg">
+                  Check Car
+                </Link>
               </ul>
             </NavigationMenuLink>
           </NavigationMenuContent>

@@ -1,5 +1,5 @@
-import { AspectRatio } from '../../ui/aspect-ratio';
-import Image from '../../../assets/car.png';
+import { AspectRatio } from "../../ui/aspect-ratio";
+import Image from "../../../assets/car.png";
 
 export default function InfoCards() {
   return (
@@ -13,7 +13,7 @@ export default function InfoCards() {
             <img src={Image} alt="" />
           </AspectRatio>
         </div>
-        <div className="flex flex-1 flex-col max-w-1/4 bg-secondary rounded-lg">
+        <div className="flex flex-1 flex-col max-w-1/4 bg-secondary rounded-lg shadow-lg">
           <div className="mx-auto text-lg font-bold py-4">
             The future of financial management
           </div>

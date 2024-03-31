@@ -1,13 +1,15 @@
-import { Link } from 'react-router-dom';
-import Navbar from './Navbar';
-import AuthButton from './AuthButton';
+import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
+import AuthButton from "./AuthButton";
 
 export default function Navigation() {
   return (
     <>
       <div className="flex justify-between text-background p-4">
         <h1 className="flex justify-center items-center text-black">
-          <Link to="home">SafeCare</Link>
+          <Link to="home" className="font-bold italic text-3xl">
+            SafeCare
+          </Link>
         </h1>
         <section className="flex gap-8">
           <Navbar />
